@@ -3,3 +3,4 @@ nameet-ssh
 *.pem
 hostkey*
 .ssh/
+stats.json*
