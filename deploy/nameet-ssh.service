@@ -1,0 +1,20 @@
+[Unit]
+Description=ssh.nameet.in TUI
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+User=nameetssh
+WorkingDirectory=/var/lib/nameet-ssh
+ExecStart=/usr/local/bin/nameet-ssh -addr :22 -hostkey /var/lib/nameet-ssh/hostkey
+AmbientCapabilities=CAP_NET_BIND_SERVICE
+CapabilityBoundingSet=CAP_NET_BIND_SERVICE
+NoNewPrivileges=true
+ProtectSystem=strict
+ProtectHome=true
+PrivateTmp=true
+ReadWritePaths=/var/lib/nameet-ssh
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
