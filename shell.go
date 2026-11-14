@@ -146,7 +146,7 @@ func (m *model) run(in string) tea.Cmd {
 			"   ▄▄▄▄▄     visitor@nameet.in",
 			"  █ ◕ ◕ █    ─────────────────",
 			"  █  ▿  █    OS: nameet.in (wish v2)",
-			"   ▀▀▀▀▀     Host: e2-micro, us-central1",
+			"   ▀▀▀▀▀     Host: oracle e2.1.micro, mumbai",
 			"             Uptime: "+uptime(),
 			"             Shell: fakesh 1.0",
 			"             Theme: #FFA86A on #222129",
